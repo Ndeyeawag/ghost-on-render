@@ -5,12 +5,23 @@
     "host": "0.0.0.0"
   },
   "database": {
-    "client": "sqlite3",
+    "client": "mysql",
     "connection": {
-      "filename": "content/data/ghost.db"
+      "host": "db4free.net",
+      "port": 3306,
+      "user": "ndeyeawa",
+      "password": "TON_MOT_DE_PASSE",
+      "database": "ghost_db"
     }
   },
+  "mail": {
+    "transport": "Direct"
+  },
   "logging": {
-    "level": "info"
+    "level": "info",
+    "transports": ["stdout"]
+  },
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
   }
 }
