@@ -4,7 +4,9 @@ WORKDIR /var/lib/ghost
 
 COPY config.production.json .
 COPY content/ ./content/
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
 
-CMD ["/start.sh"]
+ENV url=https://ghost-on-render-v9fj.onrender.com
+
+EXPOSE 2368
+
+CMD ["npm", "start", "--production"]
