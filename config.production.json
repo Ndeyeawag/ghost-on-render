@@ -10,6 +10,16 @@
       "filename": "content/data/ghost.db"
     }
   },
+  "mail": {
+    "transport": "SMTP",
+    "options": {
+      "service": "Gmail",
+      "auth": {
+        "user": "techolof@gmail.com",
+        "pass": "wzzqgtrhvcsdqcwt"
+      }
+    }
+  },
   "logging": {
     "level": "info"
   }
