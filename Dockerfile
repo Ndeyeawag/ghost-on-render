@@ -9,4 +9,5 @@ ENV url=https://ghost-on-render-v9fj.onrender.com
 
 EXPOSE 2368
 
-CMD ["npm", "start", "--production"]
+
+CMD ["node", "current/index.js"]
